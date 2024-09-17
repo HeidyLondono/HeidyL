@@ -9,11 +9,7 @@ package ejercicios_java;
  *
  * @author heilondo
  */
-public class Ejercicios_Java {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Ejercicio13 {
     public static void main(String[] args) {
         // Definir el array de números
         int[] numeros = {5, 12, 7, 18, 3, 25, 9, 14};
