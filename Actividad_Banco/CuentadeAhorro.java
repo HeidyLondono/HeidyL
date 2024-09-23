@@ -9,6 +9,17 @@ package Actividad_Banco;
  *
  * @author heilondo
  */
-public class CuentadeAhorro {
-    
+public class CuentadeAhorro extends Cuenta{
+    private double tasaInteres;
+
+    // Constructor
+    public CuentaAhorro(double saldo, double tasaInteres) {
+        super(saldo);
+        this.tasaInteres = tasaInteres;
+    }
+
+    // Métodos
+    public void aplicarInteres() {
+        saldo += saldo * tasaInteres;
+    }
 }

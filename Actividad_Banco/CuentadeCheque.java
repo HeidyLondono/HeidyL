@@ -9,6 +9,21 @@ package Actividad_Banco;
  *
  * @author heilondo
  */
-public class CuentadeCheque {
-    
+public class CuentadeCheque extends Cuenta{
+    private double limiteSobregiro;
+
+    // Constructor
+    public CuentaCheques(double saldo, double limiteSobregiro) {
+        super(saldo);
+        this.limiteSobregiro = limiteSobregiro;
+    }
+
+    // Métodos
+    public void retirar(double cantidad) {
+        if (saldo + limiteSobregiro >= cantidad) {
+            saldo -= cantidad;
+        } else {
+            System.out.println("Saldo insuficiente, incluso con sobregiro");
+        }
+    }
 }

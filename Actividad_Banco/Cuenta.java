@@ -10,5 +10,27 @@ package Actividad_Banco;
  * @author heilondo
  */
 public class Cuenta {
-    
+    protected double saldo;
+
+    // Constructor
+    public Cuenta(double saldo) {
+        this.saldo = saldo;
+    }
+
+    // Métodos
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double cantidad) {
+        saldo += cantidad;
+    }
+
+    public void retirar(double cantidad) {
+        if (saldo >= cantidad) {
+            saldo -= cantidad;
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
+    }
 }
