@@ -11,22 +11,22 @@ package Actividad_Banco;
  * @author heilondo
  */
 public class inicio {
-    
+   
     public static void main(String[] args) {
         // se crea el domicilio
-        Domicilio domicilio = new Domicilio("Calle 123", "Colonia Centro", "Estado X", 12345);
+        Domicilio domicilio = new Domicilio("Calle 92", "Avenida las palmas", "Estado New Yersi", 5050);
 
         // se crea el banco
-        Banco banco = new Banco("Banco Ejemplo", domicilio);
+        Banco banco = new Banco("Banco de la República", domicilio);
 
         // Crear un cliente
-        Cliente cliente = new Cliente("1", "Juan Perez", "555-1234", domicilio);
+        Cliente cliente = new Cliente("100", "Sandra Bedoya", "4444444", domicilio);
 
         // Agregar el cliente al banco
         banco.agregarCliente(cliente);
 
         // Crear una cuenta de cheques
-        CuentaCheques cuentaCheques = new CuentaCheques(1001, "01/01/2024", 1000.0, 10.0);
+        CuentaCheques cuentaCheques = new CuentaCheques(1, "12 de septiembre del 2024", 0.2, 5.1);
 
         // Agregar la cuenta al cliente
         cliente.agregarCuenta(cuentaCheques);
