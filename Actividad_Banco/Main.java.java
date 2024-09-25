@@ -10,7 +10,7 @@ package Actividad_Banco;
  *
  * @author heilondo
  */
-public class inicio {
+public class Main {
    
     public static void main(String[] args) {
         // se crea el domicilio
